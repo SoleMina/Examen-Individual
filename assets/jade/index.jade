@@ -1,0 +1,363 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="bootstrap/css/bootstrap.css")
+		meta(name="viewport",content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="assets/css/font-awesome.min.css")
+		link(rel="stylesheet", href="assets/css/bootstrap.css")
+		link(rel="stylesheet", href="assets/font-awesome/css/font-awesome.min.css")
+		link(rel="stylesheet", href='https://fonts.googleapis.com/css?family=Montserrat', type='text/css')
+		link(rel="stylesheet", href='https://www.google.com/fonts/specimen/Raleway', type='text/css')
+		link(rel="stylesheet", href='https://fonts.googleapis.com/css?family=Droid+Serif:700italic,400italic,400,700', type='text/css')
+		link(rel="stylesheet", href="assets/css/main.css")
+		title FASHION ACCESORIES
+		script(src='https://code.jquery.com/jquery-1.10.2.min.js')
+		script(type='text/javascript' src='./bootstrap/js/bootstrap.min.js')
+	body
+		header
+			nav.navbar.navbar-default
+				.container
+					.navbar-header
+						button(type='button',class='navbar-toggle collapsed',data-toggle='collapse',data-target='#bs-example-navbar-collapse-1',aria-expanded='false')
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+						a(class='navbar-brand text',href='#') Default Welcome Msg!
+
+					.collapse.navbar-collapse#bs-example-navbar-collapse-1
+						ul.nav.navbar-nav
+							li
+						ul.nav.navbar-nav.navbar-right
+							li
+								img(src="assets/images/flag1.png", class="bandera")
+								a(href='#') Language
+							li
+								a(href='#') $ Currency
+							li
+								a(href='#') My acoount
+		section#logos
+			.container
+				.row
+					.col-md-4
+						i.fa.fa-clock-o
+						h4 OPENING TIME
+						h6 9.00 AM - 10.00 PM
+					.col-md-4.text-center
+						img(src="assets/images/logo.png")
+					.col-md-4.text-center
+						input(type='search', placeholder='Search')
+						i.fa.fa-search
+		section#home
+			nav.navbar.without
+				.container
+					.navbar-header
+						button(type='button',class='navbar-toggle collapsed',data-toggle='collapse',data-target='#bs-example-navbar-collapse-1',aria-expanded='false')
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+						a(class='navbar-brand home',href='index.html') HOME
+
+					.collapse.navbar-collapse#bs-example-navbar-collapse-1
+						ul.nav.navbar-nav.without
+							li
+								a(href='contact.html', class="contact") CONTACT US
+						ul.nav.navbar-nav.navbar-right
+							li
+								a(href='#', class="cart") MY CART
+		section#banner
+			.header_bottom_area
+					#myCarousel.carousel.slide(data-ride='carousel')
+						// Indicators
+						ol.carousel-indicators
+							li.active(data-target='#myCarousel', data-slide-to='0')
+							li(data-target='#myCarousel', data-slide-to='1')
+						.carousel-inner(role='listbox')
+							.item.active(style='margin:0;')
+								img(src='assets/images/slider1.jpg', alt='Chania')
+							.item
+								img(src='assets/images/slider2.jpg', alt='Chania')
+						// Left and right controls
+						a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+						a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+		section#imagenes
+			.container.text-center
+				.row
+					.col-md-5
+						img(src="assets/images/banner1.jpg", class="img1")
+					.col-md-7
+						img(src="assets/images/banner2.jpg", class="img2")
+		section#gallery
+			.container
+				.row
+					.col-md-4
+						hr
+					.col-md-4
+						a(href="#") < LATEST
+						a(href="#") BESTSELLER
+						a(href="#") SALE >
+					.col-md-4
+						hr
+		section#gallery1
+			.container.text-center
+				.row
+					.col-md-3
+						img(src="assets/images/a1.jpg", class="imagen1")
+						.cuadro.text-center
+							h6 Deliver Wide
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star-o
+							i.fa.fa-star-o
+							h5 $218.00
+					.col-md-3
+						img(src="assets/images/b1.jpg")
+						.cuadro.text-center
+							h6 Deliver Wide
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star-o
+							i.fa.fa-star-o
+							h5 $218.00
+					.col-md-3
+						img(src="assets/images/c1.jpg")
+						.cuadro.text-center
+							h6 Deliver Wide
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star-o
+							i.fa.fa-star-o
+							h5 $218.00
+					.col-md-3
+						img(src="assets/images/d1.jpg")
+						.cuadro.text-center
+							h6 Deliver Wide
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star-o
+							i.fa.fa-star-o
+							h5 $218.00
+		section#logosgenerales
+			.container.text-center
+				.row
+					.col-md-2
+						img(src="assets/images/client1.jpg")
+					.col-md-2
+						img(src="assets/images/client2.jpg")
+					.col-md-2
+						img(src="assets/images/client3.jpg")
+					.col-md-2
+						img(src="assets/images/client4.jpg")
+					.col-md-2
+						img(src="assets/images/client5.jpg")
+					.col-md-2
+						img(src="assets/images/client6.jpg")
+		section.gallery
+			.container
+				.row
+					.col-md-4
+						hr
+					.col-md-4
+						a(href="#", class="size") < CLOTHING
+						a(href="#", class="size") EQUIPMENTS
+						a(href="#", class="size") JEWELLERY >
+					.col-md-4
+						hr
+		section#products
+			.container
+				.row
+					.col-md-2
+						img(src="assets/images/a2.jpg")
+					.col-md-2
+						.cuadroventas
+							h5 Deliver Wide
+							p $242.00 $218.00
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star-o
+							i.fa.fa-star-o
+						a(href="#")
+							i.fa.fa-shopping-cart
+								span Add to cart
+					.col-md-2
+						img(src="assets/images/d2.jpg")
+					.col-md-2
+						.cuadroventas
+							h5 Deliver Wide
+							p $242.00 $218.00
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star-o
+							i.fa.fa-star-o
+						a(href="#")
+							i.fa.fa-shopping-cart
+								span Add to cart
+					.col-md-2
+						img(src="assets/images/g2.jpg")
+					.col-md-2
+						.cuadroventas
+							h5 Deliver Wide
+							p $242.00 $218.00
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star-o
+							i.fa.fa-star-o
+						a(href="#")
+							i.fa.fa-shopping-cart
+								span Add to cart
+				.row
+					.col-md-2
+						img(src="assets/images/c2.jpg")
+					.col-md-2
+						.cuadroventas
+							h5 Deliver Wide
+							p $242.00 $218.00
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star-o
+							i.fa.fa-star-o
+						a(href="#")
+							i.fa.fa-shopping-cart
+								span Add to cart
+					.col-md-2
+						img(src="assets/images/c2.jpg")
+					.col-md-2
+						.cuadroventas
+							h5 Deliver Wide
+							p $242.00 $218.00
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star-o
+							i.fa.fa-star-o
+						a(href="#")
+							i.fa.fa-shopping-cart
+								span Add to cart
+					.col-md-2
+						img(src="assets/images/e1.jpg")
+					.col-md-2
+						.cuadroventas
+							h5 Deliver Wide
+							p $242.00 $218.00
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star-o
+							i.fa.fa-star-o
+						a(href="#")
+							i.fa.fa-shopping-cart
+								span Add to cart
+		section.gallery
+			.container
+				.row
+					.col-md-5
+						hr
+					.col-md-2.text-center
+						a(href="#", class="size") < BLOG >
+					.col-md-5
+						hr
+		section#blog
+			.container
+				.row
+					.col-md-3
+						img(src="assets/images/blog2.jpg")
+						h5 THE SAMPLE HEADING TITLE
+						h6 27/11/2015
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...
+						a(href="#") Read more...
+					.col-md-3
+						img(src="assets/images/blog1.jpg")
+						h5 THE SAMPLE HEADING TITLE
+						h6 27/11/2015
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...
+						a(href="#") Read more...
+					.col-md-3
+						img(src="assets/images/blog2.jpg")
+						h5 THE SAMPLE HEADING TITLE
+						h6 27/11/2015
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...
+						a(href="#") Read more...
+					.col-md-3
+						img(src="assets/images/blog3.jpg")
+						h5 THE SAMPLE HEADING TITLE
+						h6 27/11/2015
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...
+						a(href="#") Read more...
+		section#iconos
+			.container.text-center
+				.row
+					.col-md-4
+					.col-md-4
+					.col-md-4
+		section#categories
+			.container
+				.row
+					.col-md-3
+						h4 ACCESORIES
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus provident officia ipsam nobis molestiae vel eveniet maxime laborum laudantium dicta blanditiis recusandae, commodi.
+						i.fa.fa-facebook
+						i.fa.fa-twitter
+						i.fa.fa-rss
+						i.fa.fa-skype
+						i.fa.fa-dribbble
+					.col-md-2
+						h4 MY ACCOUNT
+						p
+							i.fa.fa-play My account
+						p
+							i.fa.fa-play Order History
+						p
+							i.fa.fa-play Wish List
+						p
+							i.fa.fa-play Newsletter
+					.col-md-2
+						h4 INFORMATION
+						p
+							i.fa.fa-play About Us
+						p
+							i.fa.fa-play Delivery Information
+						p
+							i.fa.fa-play Privace Policy
+						p
+							i.fa.fa-play Terms & Conditions
+					.col-md-2
+						h4 EXTRAS
+						p
+							i.fa.fa-play Brands
+						p
+							i.fa.fa-play Gifts Vauchers
+						p
+							i.fa.fa-play Affiliates
+						p
+							i.fa.fa-play Specials
+					.col-md-3.iconografia
+						h4 About Us
+						i.fa.fa-circle-o
+						p 8901 Marmora Road, Glasgow D04 89 GR, New York
+						i.fa.fa-phone
+						p (0123) 456789
+						i.fa.fa-envelope
+						p admin@bootexperts.com
+		footer
+			.container
+				.row
+					.col-md-9
+						p Copyright &#169 2015 Bootexperts All rights reserved.
+					.col-md-3
+						img(src="assets/images/payment.png")
+
+
+		script(type='text/javascript', src='assets/js/jquery.js')
+		script(type='text/javascript', src='assets/js/bootstrap.min.js')
+
+
